@@ -1,12 +1,18 @@
 {
   "name": "guitar-shop-front",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
+    "ci": "npm ci --no-fund --loglevel=error || npm i --no-fund --loglevel=error",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --configuration development",
     "build": "ng build",
+    "build-dev": "ng build --configuration development --no-aot --output-hashing none",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+  },
+  "engines": {
+    "npm": ">=9.5.0 <10.0.0",
+    "node": ">=18.15.0 <19.0.0"
   },
   "private": true,
   "dependencies": {
