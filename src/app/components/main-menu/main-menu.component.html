@@ -1,1 +1,44 @@
-<p>main-menu works!</p>
+<div class="left-side">
+
+  <input
+    class="main-logo"
+    type="image"
+    src=""
+    alt="enable-u logo"
+    [routerLink]="['']" routerLinkActive="active-home" [routerLinkActiveOptions]="{exact:true}"
+    ariaCurrentWhenActive="page"
+  >
+
+  <div class="buttons-frame">
+    <button #b1="routerLinkActive"
+            class="domain-menu-button"
+            [routerLink]="['/customers']" routerLinkActive="active" ariaCurrentWhenActive="page"
+    >
+      <div *ngIf="b1.isActive" class="chosen-button-edge"></div>
+      <div *ngIf="!b1.isActive" class="notchosen-button-edge"></div>
+      <span class="button-name">{{'BUTTON.PERSONS' | translate }}</span>
+    </button>
+    <button #b2="routerLinkActive"
+            class="domain-menu-button"
+            [routerLink]="['/guitars']" routerLinkActive="active" ariaCurrentWhenActive="page"
+    >
+      <div *ngIf="b2.isActive" class="chosen-button-edge"></div>
+      <div *ngIf="!b2.isActive" class="notchosen-button-edge"></div>
+      <span class="button-name">{{'BUTTON.COMPANIES' | translate }}</span>
+    </button>
+    <button #b3="routerLinkActive"
+            class="domain-menu-button" [routerLink]="['/brands']" routerLinkActive="active" ariaCurrentWhenActive="page"
+    >
+      <div *ngIf="b3.isActive" class="chosen-button-edge"></div>
+      <div *ngIf="!b3.isActive" class="notchosen-button-edge"></div>
+      <span class="button-name">{{'BUTTON.BAG' | translate }}</span>
+    </button>
+    <button #b4="routerLinkActive"
+            class="domain-menu-button" [routerLink]="['/stock']" routerLinkActive="active" ariaCurrentWhenActive="page"
+    >
+      <div *ngIf="b4.isActive" class="chosen-button-edge"></div>
+      <div *ngIf="!b4.isActive" class="notchosen-button-edge"></div>
+      <span class="button-name">{{'BUTTON.BRP' | translate }}</span>
+    </button>
+  </div>
+</div>
