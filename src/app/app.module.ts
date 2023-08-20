@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LangingPageComponent } from './controllers/langing-page/langing-page.component';
 import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { UsersComponent } from './controllers/users/users.component';
+import { GuitarsComponent } from './controllers/guitars/guitars.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LangingPageComponent,
     MainMenuComponent,
-    UsersComponent
+    UsersComponent,
+    GuitarsComponent
   ],
   imports: [
     BrowserModule,
