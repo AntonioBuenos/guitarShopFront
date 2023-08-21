@@ -7,6 +7,7 @@ import { LangingPageComponent } from './controllers/langing-page/langing-page.co
 import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { UsersComponent } from './controllers/users/users.component';
 import { GuitarsComponent } from './controllers/guitars/guitars.component';
+import { BrandsComponent } from './controllers/brands/brands.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GuitarsComponent } from './controllers/guitars/guitars.component';
     LangingPageComponent,
     MainMenuComponent,
     UsersComponent,
-    GuitarsComponent
+    GuitarsComponent,
+    BrandsComponent
   ],
   imports: [
     BrowserModule,
