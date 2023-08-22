@@ -8,6 +8,7 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { UsersComponent } from './controllers/users/users.component';
 import { GuitarsComponent } from './controllers/guitars/guitars.component';
 import { BrandsComponent } from './controllers/brands/brands.component';
+import { InstockComponent } from './controllers/instock/instock.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BrandsComponent } from './controllers/brands/brands.component';
     MainMenuComponent,
     UsersComponent,
     GuitarsComponent,
-    BrandsComponent
+    BrandsComponent,
+    InstockComponent
   ],
   imports: [
     BrowserModule,
