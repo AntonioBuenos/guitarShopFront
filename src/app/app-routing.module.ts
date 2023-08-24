@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes, UrlSerializer} from '@angular/router';
 import {NamedRouterPathSerializer} from "./utils/named-router-path-serializer";
+import {View} from "./models/helpers.model";
 
 const routes: Routes = [
   {
@@ -28,7 +29,7 @@ const routes: Routes = [
     loadChildren: () => import('./controllers/users/users.module').then(m => m.UsersModule),
     canActivate: [NgxPermissionsGuard],
     data: {
-      view: View.USR,
+      view: View.USE,
       title: 'MENU.USR',
       permissions: {
         only: [],
