@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import {RouterModule, Routes, UrlSerializer} from '@angular/router';
 import {NamedRouterPathSerializer} from "./utils/named-router-path-serializer";
 import {View} from "./models/helpers.model";
+import {BrandsComponent} from "./controllers/brands/brands.component";
+import {GuitarsComponent} from "./controllers/guitars/guitars.component";
+import {InstockComponent} from "./controllers/instock/instock.component";
 
 const routes: Routes = [
   {

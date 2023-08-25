@@ -9,6 +9,7 @@ import { UsersComponent } from './controllers/users/users.component';
 import { GuitarsComponent } from './controllers/guitars/guitars.component';
 import { BrandsComponent } from './controllers/brands/brands.component';
 import { InstockComponent } from './controllers/instock/instock.component';
+import { PageNotFoundComponent } from './controllers/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InstockComponent } from './controllers/instock/instock.component';
     UsersComponent,
     GuitarsComponent,
     BrandsComponent,
-    InstockComponent
+    InstockComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
