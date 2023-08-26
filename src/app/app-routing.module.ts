@@ -6,7 +6,8 @@ import {BrandsComponent} from "./controllers/brands/brands.component";
 import {GuitarsComponent} from "./controllers/guitars/guitars.component";
 import {InstockComponent} from "./controllers/instock/instock.component";
 import {PageNotFoundComponent} from "./controllers/page-not-found/page-not-found.component";
-import {LangingPageComponent} from "./controllers/langing-page/langing-page.component";
+import {LandingPageComponent} from "./controllers/landing-page/landing-page.component";
+import {NgxPermissionsGuard} from "ngx-permissions";
 
 const routes: Routes = [
   {
@@ -87,7 +88,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: LangingPageComponent,
+    component: LandingPageComponent,
     canActivate: [NgxPermissionsGuard],
     data: {
       permissions: {

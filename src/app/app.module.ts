@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LangingPageComponent } from './controllers/langing-page/langing-page.component';
+import { LandingPageComponent } from './controllers/landing-page/landing-page.component';
 import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { UsersComponent } from './controllers/users/users.component';
 import { GuitarsComponent } from './controllers/guitars/guitars.component';
@@ -14,7 +14,7 @@ import { PageNotFoundComponent } from './controllers/page-not-found/page-not-fou
 @NgModule({
   declarations: [
     AppComponent,
-    LangingPageComponent,
+    LandingPageComponent,
     MainMenuComponent,
     UsersComponent,
     GuitarsComponent,
