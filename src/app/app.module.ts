@@ -10,6 +10,7 @@ import { GuitarsComponent } from './controllers/guitars/guitars.component';
 import { BrandsComponent } from './controllers/brands/brands.component';
 import { InstockComponent } from './controllers/instock/instock.component';
 import { PageNotFoundComponent } from './controllers/page-not-found/page-not-found.component';
+import { UsersSearchComponent } from './controllers/users-search/users-search.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PageNotFoundComponent } from './controllers/page-not-found/page-not-fou
     GuitarsComponent,
     BrandsComponent,
     InstockComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    UsersSearchComponent
   ],
   imports: [
     BrowserModule,
