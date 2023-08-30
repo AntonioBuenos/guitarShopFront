@@ -13,6 +13,7 @@ import { PageNotFoundComponent } from './controllers/page-not-found/page-not-fou
 import { UsersSearchComponent } from './controllers/users-search/users-search.component';
 import { BrandsSearchComponent } from './controllers/brands-search/brands-search.component';
 import { GuitarsSearchComponent } from './controllers/guitars-search/guitars-search.component';
+import { InstockSearchComponent } from './controllers/instock-search/instock-search.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { GuitarsSearchComponent } from './controllers/guitars-search/guitars-sea
     PageNotFoundComponent,
     UsersSearchComponent,
     BrandsSearchComponent,
-    GuitarsSearchComponent
+    GuitarsSearchComponent,
+    InstockSearchComponent
   ],
   imports: [
     BrowserModule,
