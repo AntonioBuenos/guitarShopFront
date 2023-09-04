@@ -19,16 +19,7 @@ import { InstockSearchComponent } from './controllers/instock-search/instock-sea
   declarations: [
     AppComponent,
     LandingPageComponent,
-    MainMenuComponent,
-    UsersComponent,
-    GuitarsComponent,
-    BrandsComponent,
-    InstockComponent,
-    PageNotFoundComponent,
-    UsersSearchComponent,
-    BrandsSearchComponent,
-    GuitarsSearchComponent,
-    InstockSearchComponent
+    MainMenuComponent
   ],
   imports: [
     BrowserModule,
