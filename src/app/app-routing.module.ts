@@ -45,7 +45,7 @@ const routes: Routes = [
   },
   {
     path: 'brands', component: BrandsComponent,
-    loadChildren: () => import('./controllers/companies/companies.module').then(m => m.BrandsModule),
+    loadChildren: () => import('./controllers/brands/brands.module').then(m => m.BrandsModule),
     canActivate: [NgxPermissionsGuard],
     data: {
       view: View.BRA,
