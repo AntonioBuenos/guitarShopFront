@@ -30,13 +30,8 @@
             "styles": [
               "node_modules/@danielmoncada/angular-datetime-picker/assets/style/picker.min.css",
               "node_modules/primeicons/primeicons.css",
-              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
-              "node_modules/simplebar/dist/simplebar.css",
-              "node_modules/angular2-draggable/css/resizable.min.css",
-              "node_modules/overlayscrollbars/css/OverlayScrollbars.min.css",
-              "src/styles.scss",
-              "node_modules/ol/ol.css"
+              "src/styles.scss"
             ],
             "resourcesOutputPath": "./assets",
             "scripts": []
@@ -86,10 +81,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [

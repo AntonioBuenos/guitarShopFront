@@ -14,6 +14,7 @@ import { UsersSearchComponent } from './controllers/users-search/users-search.co
 import { BrandsSearchComponent } from './controllers/brands-search/brands-search.component';
 import { GuitarsSearchComponent } from './controllers/guitars-search/guitars-search.component';
 import { InstockSearchComponent } from './controllers/instock-search/instock-search.component';
+import {TranslateModule} from "@ngx-translate/core";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { InstockSearchComponent } from './controllers/instock-search/instock-sea
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TranslateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
